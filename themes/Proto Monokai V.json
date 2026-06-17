@@ -744,7 +744,7 @@
         "editor.background": "#2D203C",
         "editor.gutter.background": "#2D203C",
         "editor.subheader.background": "#181825",
-        "editor.active_line.background": "#151e2ccf",
+        "editor.active_line.background": "#181825cf",
         "editor.highlighted_line.background": "#2D203C",
         "editor.line_number": "#7f849c",
         "editor.active_line_number": "#cba6f7",
