@@ -10,26 +10,21 @@
   // AI THING
   // "server_url": "http://localhost:8080",
   "context_servers": {
-    "mcp-server-context7": {
-      "enabled": true,
-      "remote": false,
-      "settings": {}
-    },
     "mcp-server-sequential-thinking": {
       "enabled": false,
       "remote": false,
-      "settings": {},
-    },
+      "settings": {}
+    }
   },
   "cli_default_open_behavior": "existing_window",
   "outline_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "collaboration_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "git_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "prettier": {},
   "agent_buffer_font_size": 16.0,
@@ -41,6 +36,7 @@
       "proxy_no_verify": null,
       "enterprise_uri": null,
     },
+    "enabled_in_text_threads": false,
   },
   "show_edit_predictions": true,
   "terminal": {
@@ -49,34 +45,22 @@
     },
   },
   "agent": {
-    "favorite_models": [
-      {
-        "provider": "google",
-        "model": "gemini-2.5-flash-lite",
-        "enable_thinking": false
-      }
-    ],
-    "profiles": {
-      
-    },
-    "tool_permissions": {
-      "default": "allow",
-    },
     "dock": "right",
     "inline_assistant_model": {
       "provider": "google",
       "model": "gemini-2.5-flash",
     },
+    "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
-      "enable_thinking": false,
+      "enable_thinking": true,
       "provider": "google",
       "model": "gemini-2.5-flash-lite",
     },
     "default_width": 360,
   },
   // THEME
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Bearded Icons",
   "base_keymap": "VSCode",
   "telemetry": {
     "metrics": false,
@@ -109,7 +93,7 @@
   "theme": {
     "mode": "dark",
     "light": "macOS Classic Light",
-    "dark": "Proto Monokai V (Cool)",
+    "dark": "Proto Monokai V (Soft)",
   },
   "file_scan_exclusions": [
     "**/.git",

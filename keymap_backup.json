@@ -1,0 +1,86 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleLeftDock",
+      "ctrl-b": "workspace::ToggleBottomDock",
+      "ctrl-j": "workspace::ToggleRightDock",
+      "ctrl-shift-g": [
+        "task::Spawn",
+        {
+          "task_name": "start gitui",
+          "reveal_target": "center"
+        }
+      ]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-b": "workspace::ToggleBottomDock",
+      "ctrl-t": "workspace::NewTerminal",
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-up": "editor::DuplicateLineUp",
+      "ctrl-alt-down": "editor::DuplicateLineDown",
+      "ctrl-k": null
+      // "ctrl-shift-g": [
+      //   "task::Spawn",
+      //   {
+      //     "task_name": "start gitui",
+      //     "reveal_target": "center"
+      //   }
+      // ]
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "enter": "project_panel::Open",
+      "r": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction",
+    "bindings": {
+      "tab": "editor::AcceptEditPrediction",
+      "alt-s": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction_conflict",
+    "bindings": {
+      "tab": "editor::AcceptEditPrediction",
+      "alt-s": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction && edit_prediction_mode == eager && !showing_completions",
+    "bindings": {
+      "alt-s": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction && edit_prediction_mode == eager && !showing_completions",
+    "unbind": {
+      "tab": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction && (showing_completions || in_leading_whitespace)",
+    "bindings": {
+      "alt-s": "editor::AcceptEditPrediction"
+    }
+  }
+]
